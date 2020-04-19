@@ -122,6 +122,9 @@ function run(filepath, isMode) {
 		.replace(/(^|\s|;)export default/, '$1module.exports =')
 		.replace(/(^|\s|;)export (const|function|class|let|var) (.+?)(?=(\(|\s|\=))/gi, (_, x, type, name) => {
 			return keys.push(name) && `${x}${type} ${name}`;
+		})
+		.replace(/(^|\s|;)export \{(.+?)}(?=(;|\s|$))/, (_, x, names) => {
+			return keys.push(...(names.split(',').map(name => name.trim()))) && x;
 		});
 
 	if (keys.length > 0) {
