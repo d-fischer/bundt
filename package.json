@@ -1,6 +1,6 @@
 {
   "name": "@d-fischer/bundt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "d-fischer/bundt",
   "description": "A simple bundler for your delcious modules~!",
   "license": "MIT",
