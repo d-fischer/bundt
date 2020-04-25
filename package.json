@@ -1,7 +1,7 @@
 {
-  "name": "bundt",
+  "name": "@d-fischer/bundt",
   "version": "1.0.0",
-  "repository": "lukeed/bundt",
+  "repository": "d-fischer/bundt",
   "description": "A simple bundler for your delcious modules~!",
   "license": "MIT",
   "bin": {
@@ -11,9 +11,8 @@
     "*.js"
   ],
   "author": {
-    "name": "Luke Edwards",
-    "email": "luke.edwards05@gmail.com",
-    "url": "https://lukeed.com"
+    "name": "Daniel Fischer",
+    "email": "daniel@d-fischer.dev"
   },
   "scripts": {
     "test": "tape test/*.js | tap-spec"
